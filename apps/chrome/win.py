@@ -50,3 +50,20 @@ class BrowserActions:
         #action(browser.title)
     def toggle_dev_tools():
         actions.key('ctrl-shift-i')
+
+
+    def close_tab():
+        actions.key('ctrl-w')
+
+    def open_tab():
+        actions.key('ctrl-t')
+
+    def vimium():
+        actions.key('f')
+
+
+    def faster():
+        actions.key('shift-d')
+
+    def slower():
+        actions.key('shift-s')

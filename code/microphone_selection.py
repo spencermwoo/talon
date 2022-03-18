@@ -39,7 +39,6 @@ def gui(gui: imgui.GUI):
     if gui.button("Microphone close"):
         actions.user.microphone_selection_hide()
 
-
 @mod.action_class
 class Actions:
     def microphone_selection_toggle():
@@ -55,13 +54,12 @@ class Actions:
         gui.hide()
 
     def microphone_select(index: int):
-        """Selects a micropohone"""
+        """Selects a microphone"""
         if 1 <= index and index <= len(microphone_device_list):
             actions.speech.set_microphone(microphone_device_list[index - 1])
             app.notify(
                 "Activating microphone: {}".format(microphone_device_list[index - 1])
             )
-            gui.hide()
 
 
 def on_ready():
