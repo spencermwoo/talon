@@ -12,7 +12,7 @@ tag(): user.tabs
 please [<user.text>]:
     key(ctrl-3)
     insert(user.text or "")
-    
+
 # Sidebar
 bar explore: key(alt-shift-w p)
 # bar extensions:
@@ -51,7 +51,7 @@ panel variables:
     key(v)
 # panel switch:
 # panel terminal:
-    
+
 # Settings
 show settings: key(alt-w p)
 show shortcuts: key(ctrl-shift-l)
@@ -73,8 +73,7 @@ file hunt [<user.text>]:
 # file create sibling:
 file create: key(ctrl-n)
 file open folder: key(alt-shift-w x)
-file rename:
-    key(alt-shift-w p enter f2)
+file rename: key(alt-shift-w p enter f2)
 file reveal: key(alt-shift-w p enter)
 
 # Language Features

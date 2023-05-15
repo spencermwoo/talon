@@ -6,7 +6,7 @@ tag(): user.code_comment_line
 tag(): user.code_data_bool
 tag(): user.code_data_null
 tag(): user.code_functions
-tag(): user.code_functions_gui
+tag(): user.code_functions_common
 tag(): user.code_libraries
 tag(): user.code_libraries_gui
 tag(): user.code_operators_assignment
@@ -30,14 +30,14 @@ library <user.code_libraries>:
     key(end enter)
 
 # R specific commands
-(chain|pipe that):
+(chain | pipe that):
     key(end)
     " %>%"
     key(enter)
-state na:
-    insert("NA")
+state na: insert("NA")
 
 # TODO: migrate to function tag
 ^function define <user.text>$: user.code_private_function(text)
 
-named arg {user.code_parameter_name}: user.code_insert_named_argument(code_parameter_name)
+named arg {user.code_parameter_name}:
+    user.code_insert_named_argument(code_parameter_name)

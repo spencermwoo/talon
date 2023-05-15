@@ -1,7 +1,6 @@
-from talon import Context, actions, ui, Module, app
+from talon import Context
 
 # from user.knausj_talon.code.snippet_watcher import snippet_watcher
-import os
 
 ctx = Context()
 ctx.matches = r"""
@@ -39,4 +38,3 @@ ctx.lists["user.snippets"] = {
 #     )
 # if snippet_path:
 #     watcher = snippet_watcher({snippet_path: ["python.json",],}, update_list,)
-
